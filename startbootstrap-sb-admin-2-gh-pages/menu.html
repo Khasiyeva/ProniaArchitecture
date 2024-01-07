@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+    .featured-food {
+        margin-top: 20px;
+    }
+
+    .food-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+        color: #333;
+        margin-top: 10px;
+    }
+
+    .text-content h4 {
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .button {
+        margin-top: 10px;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #hamburger-update {
+        background-color: rgb(3, 172, 3);
+    }
+
+    #hamburger-delete {
+        background-color: red;
+    }
+
+    #pizza-update{
+      background-color: rgb(3, 172, 3); 
+    }
+    #pizza-delete{
+      background-color: red; 
+    }
+    #icelatte-update{
+      background-color: rgb(3, 172, 3); 
+    }
+    #icelatte-delete{
+      background-color: red; 
+    }
+    #waffle-update{
+      background-color:rgb(3, 172, 3); 
+    }
+    #waffle-delete{
+      background-color: red; 
+    }
+    #cocacola-update{
+      background-color:rgb(3, 172, 3); 
+    }
+    #cocacola-delete{
+      background-color: red; 
+    }
+    #milkshake-update{
+      background-color:rgb(3, 172, 3); 
+    }
+    #milkshake-delete{
+      background-color: red; 
+    }
+</style>
+</head>
+<body>
+  <section class="featured-food">
+
+    <div class="container">   
+        <div class="row">
+            <div class="col-md-4">
+                <div class="food-item">
+                  <img src="C:\Users\User\Downloads\hamburger.webp" width="150" height="100">
+                    <div class="price">7 AZN</div>
+                    <div class="text-content">
+                        <h4>Hamburger</h4>
+                    </div>
+                    <button class="button" type="submit" style="background-color: rgb(3, 172, 3);" id="hamburger-update"> Update</button>
+                    <button class="button" type="submit" style="background-color: red" id="hamburger-delete"> Delete</button>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="food-item">
+                  <img src="C:\Users\User\Downloads\pizza.png" width="150" height="100">
+                    <div class="price">14 AZN</div>
+                    <div class="text-content">
+                        <h4>Pizza</h4>
+                    </div>
+                    <button class="button" type="submit" style="background-color: rgb(3, 172, 3);" id="pizza-update"> Update</button>
+                    <button class="button" type="submit" style="background-color: red" id="pizza-delete"> Delete</button>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="food-item">
+                  <img src="C:\Users\User\Downloads\Ice latte.jpeg" width="150" height="100">
+                    <div class="price">5 AZN</div>
+                    <div class="text-content">
+                        <h4>Ice latte</h4>
+                    </div>
+                    <button class="button" type="submit" style="background-color: rgb(3, 172, 3);" id="latte-update"> Update</button>
+                    <button class="button" type="submit" style="background-color: red" id="latte-delete"> Delete</button>
+                </div>
+            </div>
+          
+            <div class="col-md-4">
+              <div class="food-item">
+                <img src="C:\Users\User\Downloads\Waffle.jpg" width="150" height="100">
+                  <div class="price">8 AZN</div>
+                  <div class="text-content">
+                      <h4>Waffle</h4>
+                  </div>
+                  <button class="button" type="submit" style="background-color: rgb(3, 172, 3);" id="waffle-update"> Update</button>
+                  <button class="button" type="submit" style="background-color: red" id="waffle-delete"> Delete</button>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="food-item">
+                <img src="C:\Users\User\Downloads\Coca-Cola-PNG-HD-Quality.png" width="150" height="100">
+                  <div class="price">3 Azn</div>
+                  <div class="text-content">
+                      <h4>CocaCola</h4>
+                  </div>
+                  <button class="button" type="submit" style="background-color: rgb(3, 172, 3);" id="cocacola-update"> Update</button>
+                  <button class="button" type="submit" style="background-color: red" id="cocacola-delete"> Delete</button>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="food-item">
+                <img src="C:\Users\User\Downloads\Milkshake.png" width="150" height="100">
+                  <div class="price">6 Azn</div>
+                  <div class="text-content">
+                      <h4>Milkshake</h4>
+                  </div>
+                  <button class="button" type="submit" style="background-color: rgb(3, 172, 3);" id="milkshake-update"> Update</button>
+                  <button class="button" type="submit" style="background-color: red" id="milkshake-delete"> Delete</button>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</html>
